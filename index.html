@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.body{
+    height: 900px;
+    width: 900px;
+}
+table {
+    table-layout: fixed;
+    font-family: arial, sans-serif;
+    width: 100%;
+}
+tfoot {
+    text-align: center;
+}
+thead {
+    text-align: center;
+    
+}
+tbody td:nth-child(even) {
+    background-color: yellow;
+}
+tbody tr:nth-child(even) {
+    background-color: red;
+}
+thead td {
+    width: calc(100%/4);
+}
+img {
+    width: 100%;
+}
+tbody tr{
+    height: 200px;
+    text-align: center;
+}
+section {
+    padding: 0 70px 0;
+}
+</style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <td>
+                    <a href="#">Home</a>
+                </td>
+                <td>
+                    <a href="./about.html">About</a>
+                </td>
+                <td>
+                    <a href="./contact.html">Contact</a>
+                </td>
+                <td>
+                    <a href="./blog.html">Blog</a>
+                </td>
+            </tr>
+            <tr>
+                    <td colspan="4">
+                        <img src="./pexels-photo-248797.jpeg" alt="metamask-fox">
+                    </td>
+                </tr>
+        </thead>
+
+        <tbody>
+           
+
+            <tr>
+                <td colspan="3" rowspan="2">
+                    <section>
+                        <h1>
+                            this the section area.
+                        </h1>
+                        <p>
+                            this the section area. this the section area. this the section area. this the section area.
+                            this the section area. this the section area. this the section area. this the section area.
+                            this the section area. this the section area. this the section area. this the section area.
+                        </p>
+                    </section>
+                </td>
+                <td>
+                    <aside>
+                        this the aside area.
+                    </aside>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                        <aside>
+                                this the aside area.
+                            </aside> 
+                </td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="4">
+                    <a href="http://google.com" target="_blank">footer</a>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
