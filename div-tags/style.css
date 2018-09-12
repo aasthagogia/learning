@@ -85,6 +85,9 @@ h4, h5, h6{
 }
 p{
     margin-bottom: 29px;
+    line-height: 24.2px;
+    font-size: 14.667px;
+    padding-right: 50px;
 }
 
 /* color */
@@ -180,11 +183,6 @@ li a:hover {
     float: left;
     width: 50%;
 }
-.banner-content > p {
-    font-size: 14.667px;
-    line-height: 24.2px;
-    padding-right: 60px;
-}
 .banner-image {
     float: left;
     width: 50%;
@@ -265,10 +263,7 @@ header h2 {
     line-height: 27.5px;
     font-family: "Roboto Slab", serif;
 }
-.article-para {
-    line-height: 24.2px;
-    font-size: 14.667px;
-}
+
 .article-items {
     margin-bottom: 2em;
     float: left;
@@ -281,31 +276,36 @@ header h2 {
 .image-paragraph {
     float: left;
     width: 50%;
-    padding-bottom: 2em;
+    padding-bottom: 6em;
+}
+.image-paragraph a img {
+    border-radius: 5px;
+}
+.image-paragraph a img:hover {
+    transform: scale(1.075);
+    /* width: 557px; 
+    height: 342px; */
 }
 .image-paragraph::after {
+    clear: both;
     background: rgba(210, 215, 217, 0.75);
     content: '';
     display: block;
     height: 1px;
-    right: 89px;
-    bottom: -106em;
+    right: 0;
+    bottom: -35em;
     position: absolute;
-    width: calc(100% + -11.2em);
+    width: 100%;
 }
 #third-article::after {
-    bottom:-140.5em;
+    bottom: -73.5em;
 }
 .image-paragraph:nth-child(even) {
     padding-left: 2.4%;
+    border-left-style: solid;
+    border-color: rgba(210, 215, 217, 0.75);
+    border-left-width: 1px;
 }
-.image-paragraph:nth-child(even)::before {
-    background: rgba(210, 215, 217, 0.75);
-    content: '';
-    display: block;
-    height: calc(100% + 15em);
-    left: 42.2em;
-    position: absolute;
-    /* top: 0; */
-    width: 1px;
+#last-article {
+    padding-bottom: 0px;
 }
