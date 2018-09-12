@@ -1,0 +1,311 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.4;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* typography */
+h1{
+    font-size: 40px;    
+}
+h2{
+    font-size: 26px;
+}
+h3{
+    font-size: 18.33px;
+}
+h4{
+    font-size: 24px;
+}
+h5{
+    font-size: 18px;
+}
+h6{
+    font-size: 14px;
+}
+/* h1, h2, h3, h4, h5, h6 {
+    font-weight: 600; 
+} */
+
+h1, h2, h3{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #3d4449;
+    font-weight: 700;
+}
+h4, h5, h6{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+p{
+    margin-bottom: 29px;
+}
+
+/* color */
+.text-red{
+    color: #f56a6a;
+}
+.text-green{
+    color: green;
+}
+
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+*{
+    box-sizing: border-box;
+    color: #7f888f;
+}
+.container{
+    max-width: 1170px;
+    /* padding: 0 5em 0.1em 5em; */
+    width: 100%;
+    margin: auto;
+}
+.container:after, .banner:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* gird */
+.fullwidth {
+    width: 100%;
+    float: left;
+}
+.half-col{
+    width: 50%;
+    float: left;
+}
+strong, b {
+    color: #3d4449;
+    font-weight: 600;
+}
+a {
+    text-decoration: none;
+}
+.container section {
+    padding: 73.3px 0 44px;
+    width: 100%;   
+}
+/* ========================== header =====================*/
+.header {
+    border-bottom: solid 5px #f56a6a;
+    padding: 6em 0 1em 0;
+    /* position: relative; */
+    display: inline-block;
+    width: 100%;
+}
+.header-ref {
+    font-family: "Roboto Slab", serif;
+    color: inherit;
+    font-weight: 400;
+    text-decoration: none;
+    float: left;
+    margin-top: 13px;
+}
+a:hover > * {
+    color: #f56a6a !important;
+}
+.icons {
+    float: right;
+}
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111111;
+}
+/* ========================== banner =====================*/
+.banner-content {
+    float: left;
+    width: 50%;
+}
+.banner-content > p {
+    font-size: 14.667px;
+    line-height: 24.2px;
+    padding-right: 60px;
+}
+.banner-image {
+    float: left;
+    width: 50%;
+}
+header h1 {
+    font-weight: 700;
+    font-size: 52px;
+    margin-top: 0px;
+}
+#banner-header {
+    font-family: "Roboto Slab", serif;
+}
+.banner-button {
+    background-color: transparent;
+    color: #f56a6a;
+    height: 41.0667px;
+    width: 140px;
+    border-radius: 4.4px;
+    border-color: #f56a6a;
+    border-style: solid;
+    font-family: "Roboto Slab", serif;
+    font-size: 12.337px;
+    font-weight: 700;
+    line-height: 41.0667px;
+    letter-spacing: 0.88px;
+    padding: 0px 6px;
+}
+/* ========================== erat-lacinia =====================*/
+.erat-lacinia {
+    border-top: solid 2px rgba(210, 215, 217, 0.75);
+}
+header h2 {
+    border-bottom: solid 3px #f56a6a;
+    margin:0 0 51.3px;
+    padding-right: 19.250px;
+    padding-bottom: 12.83px;
+    display: inline-block;
+    line-height: 38.5px;
+}
+.far::after {
+    transform: rotate(45deg);
+    border-radius: 0.25rem;
+    border: solid 2px rgba(210, 215, 217, 0.75);
+    content: '';
+    display: block;
+    height: 7em;
+    left: 50%;
+    margin: -3.5em 0 0 -3.5em;
+    position: absolute;
+    top: 50%;
+    width: 7em;
+}
+.far::before {
+    color: #f56a6a;
+    font-size: 2.75rem;
+    position: relative;
+    top: 1.5em;
+}
+.far {
+    height: 10em;
+    line-height: 10em;
+    margin: 0 2em 0 0;
+    text-align: center;
+    width: 10em;
+    position: relative;
+    float: left;
+}
+.article-item {
+    width: 50%;
+    float: left;
+    margin-bottom: 25px;
+}
+.article-head-para {
+    width: 64%;
+    float: left;
+}
+.article-head {
+    line-height: 27.5px;
+    font-family: "Roboto Slab", serif;
+}
+.article-para {
+    line-height: 24.2px;
+    font-size: 14.667px;
+}
+.article-items {
+    margin-bottom: 2em;
+    float: left;
+}
+/* ========================== ipsum-sed-dolor =====================*/
+.ipsum-sed-dolor {
+    border-top: solid 2px rgba(210, 215, 217, 0.75);
+    float: left;
+}
+.image-paragraph {
+    float: left;
+    width: 50%;
+    padding-bottom: 2em;
+}
+.image-paragraph::after {
+    background: rgba(210, 215, 217, 0.75);
+    content: '';
+    display: block;
+    height: 1px;
+    right: 89px;
+    bottom: -106em;
+    position: absolute;
+    width: calc(100% + -11.2em);
+}
+#third-article::after {
+    bottom:-140.5em;
+}
+.image-paragraph:nth-child(even) {
+    padding-left: 2.4%;
+}
+.image-paragraph:nth-child(even)::before {
+    background: rgba(210, 215, 217, 0.75);
+    content: '';
+    display: block;
+    height: calc(100% + 15em);
+    left: 42.2em;
+    position: absolute;
+    /* top: 0; */
+    width: 1px;
+}
