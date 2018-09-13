@@ -58,7 +58,7 @@ h2{
     font-size: 26px;
 }
 h3{
-    font-size: 18.33px;
+    font-size: 18px;
 }
 h4{
     font-size: 24px;
@@ -85,11 +85,16 @@ h4, h5, h6{
 }
 p{
     margin-bottom: 29px;
-    line-height: 24.2px;
-    font-size: 14.667px;
-    padding-right: 50px;
 }
-
+.paragraph {
+    line-height: 1.6;
+    font-size: .94em;
+    /* padding-right: 50px; */
+    
+}
+.free-and-fully {
+    letter-spacing: 1.1px;
+}
 /* color */
 .text-red{
     color: #f56a6a;
@@ -113,9 +118,9 @@ p{
 }
 .container{
     max-width: 1170px;
-    /* padding: 0 5em 0.1em 5em; */
     width: 100%;
     margin: auto;
+    padding: 0 15px;
 }
 .container:after, .banner:after{
     content: "";
@@ -139,8 +144,13 @@ a {
     text-decoration: none;
 }
 .container section {
-    padding: 73.3px 0 44px;
-    width: 100%;   
+    padding: 73px 0 44px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+img {
+    max-width: 100%;
+    height: auto;
 }
 /* ========================== header =====================*/
 .header {
@@ -161,6 +171,10 @@ a {
 a:hover > * {
     color: #f56a6a !important;
 }
+a:hover {
+    color: #f56a6a !important;
+    background-color: transparent !important;
+}
 .icons {
     float: right;
 }
@@ -179,14 +193,17 @@ li a:hover {
     background-color: #111111;
 }
 /* ========================== banner =====================*/
+.banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 .banner-content {
-    float: left;
-    width: 50%;
+    /* float: left;
+    width: 50%; */
+    padding-left: 15px;
+    padding-right: 15px;    
 }
-.banner-image {
-    float: left;
-    width: 50%;
-}
+
 header h1 {
     font-weight: 700;
     font-size: 52px;
@@ -195,34 +212,35 @@ header h1 {
 #banner-header {
     font-family: "Roboto Slab", serif;
 }
-.banner-button {
+.a-href-class {
     background-color: transparent;
     color: #f56a6a;
-    height: 41.0667px;
-    width: 140px;
     border-radius: 4.4px;
     border-color: #f56a6a;
     border-style: solid;
     font-family: "Roboto Slab", serif;
-    font-size: 12.337px;
+    font-size: .75em;
     font-weight: 700;
-    line-height: 41.0667px;
+    line-height: 3.5;
     letter-spacing: 0.88px;
-    padding: 0px 6px;
+    padding: 12px 37px;
+    border-width: 2px;
 }
+
 /* ========================== erat-lacinia =====================*/
 .erat-lacinia {
     border-top: solid 2px rgba(210, 215, 217, 0.75);
+    float: left;
 }
-header h2 {
+.erat-lacinia h2, .ipsum-sed-dolor h2 {
     border-bottom: solid 3px #f56a6a;
     margin:0 0 51.3px;
-    padding-right: 19.250px;
-    padding-bottom: 12.83px;
+    padding-right: 19px;
+    padding-bottom: 13px;
     display: inline-block;
-    line-height: 38.5px;
+    line-height: 1.4;
 }
-.far::after {
+.gem-icon::after {
     transform: rotate(45deg);
     border-radius: 0.25rem;
     border: solid 2px rgba(210, 215, 217, 0.75);
@@ -235,15 +253,15 @@ header h2 {
     top: 50%;
     width: 7em;
 }
-.far::before {
+.gem-icon::before {
     color: #f56a6a;
     font-size: 2.75rem;
     position: relative;
     top: 1.5em;
 }
-.far {
+
+.gem-icon {
     height: 10em;
-    line-height: 10em;
     margin: 0 2em 0 0;
     text-align: center;
     width: 10em;
@@ -251,61 +269,129 @@ header h2 {
     float: left;
 }
 .article-item {
-    width: 50%;
-    float: left;
+    display: grid;
+    grid-template-columns: auto auto;
     margin-bottom: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
-.article-head-para {
-    width: 64%;
-    float: left;
-}
+
 .article-head {
-    line-height: 27.5px;
+    line-height: 1.5;
     font-family: "Roboto Slab", serif;
 }
 
 .article-items {
+    display: grid;
+    grid-template-columns: auto auto;
     margin-bottom: 2em;
-    float: left;
+    /* float: left; */
+    padding-left: 15px;
+    padding-right: 15px;
 }
+
 /* ========================== ipsum-sed-dolor =====================*/
 .ipsum-sed-dolor {
     border-top: solid 2px rgba(210, 215, 217, 0.75);
     float: left;
+    margin: auto 0px;
+}
+.image-paragraph-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 .image-paragraph {
-    float: left;
-    width: 50%;
-    padding-bottom: 6em;
+    margin-top: 25px;
+    padding: 0 15px 25px;
+    position: relative;
 }
 .image-paragraph a img {
     border-radius: 5px;
 }
 .image-paragraph a img:hover {
     transform: scale(1.075);
-    /* width: 557px; 
-    height: 342px; */
+    transition: all .2s;
 }
 .image-paragraph::after {
-    clear: both;
     background: rgba(210, 215, 217, 0.75);
     content: '';
     display: block;
     height: 1px;
     right: 0;
-    bottom: -35em;
+    bottom: 0em;
     position: absolute;
     width: 100%;
+
 }
-#third-article::after {
-    bottom: -73.5em;
+.image-paragraph:nth-child(even)::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 0;
+    left: 0;
+    width: 1px;
+    background: rgba(210, 215, 217, 0.75);
+    height: calc(100% + 4em);
 }
-.image-paragraph:nth-child(even) {
-    padding-left: 2.4%;
-    border-left-style: solid;
-    border-color: rgba(210, 215, 217, 0.75);
-    border-left-width: 1px;
-}
-#last-article {
+.last-article {
     padding-bottom: 0px;
+}
+.last-article::after {
+    content: none;
+}
+.last-article::before {
+    height: 100% !important;
+}
+
+/* ========================== media queries =====================*/
+
+@media screen and (max-width: 900px) {
+    .article-items {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .erat-lacinia h2, .ipsum-sed-dolor h2 {
+        margin-left: 15px;
+    }
+    .banner-content > img {
+        height: 100%;
+    }
+}
+@media screen and (max-width: 786px) {
+    .banner {
+        grid-template-columns: auto;
+    }
+    .banner-content {
+        margin-bottom: 15px;
+    }
+    .banner-content > img {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .image-paragraph-container {
+        grid-template-columns: auto;
+    }
+    .image-paragraph:nth-child(even)::before {
+        content: none;
+    }
+    #second-last-article::after {
+        content: '';
+    }
+    #second-last-article {
+        padding-bottom: 25px;
+    }
+    body {
+        font-size: 0.8em;
+    }
+    .gem-icon::before {
+        top: 1.2em;
+    }
+}
+@media screen and (max-width: 414px) {
+    .icons {
+        position: absolute;
+        right: 0;
+        top: 1em;
+    }
 }
