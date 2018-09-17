@@ -1,0 +1,285 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts/poppins-regular-webfont.woff);
+    font-weight: regular;
+}
+
+body {
+    font-size: 14px;
+    font-family: myFirstFont, sans-serif;
+    line-height: 1.4;
+    color: #777777;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* typography */
+h1{
+    font-size: 40px;  
+    color: black;  
+}
+h2{
+    font-size: 26px;
+}
+h3{
+    font-size: 18px;
+}
+h4{
+    font-size: 24px;
+}
+h5{
+    font-size: 18px;
+}
+h6{
+    font-size: 14px;
+}
+/* h1, h2, h3, h4, h5, h6 {
+    font-weight: 600; 
+} */
+
+h1, h2, h3{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+h4, h5, h6{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+p{
+    margin-bottom: 29px;
+}
+
+/* color */
+.red-color {
+    color: #f6214b;
+}
+.white-color {
+    color: white;
+}
+.background-red {
+    background-color: #f6214b;
+}
+
+/*alignment*/
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+*{
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1170px;
+    width: 100%;
+    margin: auto;
+    padding: 0 15px;
+}
+.container::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+/* gird */
+.display-flex {
+    display: flex;
+    justify-content: center;
+}
+.justify-evenly {
+    justify-content: space-evenly !important;
+}
+/* .fullwidth {
+    /* display: flex;
+    justify-content: space-around; 
+    width: 100%;
+    float: left;
+} */
+.half-col{
+    width: 60%;
+    float: left;
+}
+.one-third-col {
+    width: 33.3%;
+    float: left;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.container section {
+    padding: 73px 0 44px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.padding-top {
+    padding-top: 6rem;
+}
+.padding-bottom {
+    padding-bottom: 6rem;
+}
+.text-transform {
+    text-transform: uppercase;
+}
+.margin-bottom {
+    margin-bottom: 6rem;
+}
+
+/*================================== Header =========================================*/
+header .fullwidth  span {
+    font-weight: 600;
+    font-size: 14px;
+    text-align: left;
+}
+.one-third-col span {
+    color: black;
+}
+header .fullwidth div {
+    padding: 15px 15px;
+}
+header {
+    margin-left: -15px;
+    margin-right: -15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    z-index: 2;
+}
+.phone-img {
+    background-color: #f6214b;
+    color: #fff;
+    padding: 33px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+.margin-zero {
+    margin: 0px;
+}
+#third-col {
+    padding: 0px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    /* text-align: center; */
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, a.active, a:active {
+    color: #f6214b;
+}
+.display-flex a {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/*================================== Banner =========================================*/
+.banner {
+    position: relative;
+}
+.banner-overlay {
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: calc(100% - 6px);
+}
+.banner-overlay-content {
+    height: calc(100% - 6px);
+    align-items: center;
+    flex-direction: column;
+}
+.banner-overlay-content h1 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 72px;
+}
+/*================================== We offer =========================================*/
+.we-offer-heading {
+    font-weight: 600;
+}
+.we-offer-heading p {
+    font-weight: 300;
+}
+.card {
+    box-shadow: 0px 20px 60px 0px rgba(246, 33, 75, 0.3);
+    padding: 40px 30px 30px 30px;
+    border-radius: 10px;
+    margin: 0 15px;
+}
+input[type="text"] {
+    color: #fff;
+    font-size: 12px;
+    padding: 12px;
+    border-radius: 0;
+    background: transparent;
+    border-color: #f96481;
+}
+form a {
+    background-color: #fff; 
+    border-radius: 34px;
+}
+/*================================== Header =========================================*/
