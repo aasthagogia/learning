@@ -1,0 +1,18 @@
+.section-header-h5 {
+    color: $md-secondary-color !important;
+    text-transform: uppercase;
+    @extend .section-header-font;
+}
+.section-header-font {
+    font-family: $Secondary-font !important;
+    font-weight: 300 !important;
+    text-align: center;
+}
+.section-header-h2 {
+    @extend .section-header-font;
+    margin-bottom: 1rem !important;
+}
+.section-header-p {
+    @extend .section-header-font;
+    font-size: 24px !important;
+}

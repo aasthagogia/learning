@@ -1,0 +1,72 @@
+.main-container,
+.darker-background {
+    background-color: $navy-blue;
+}
+.white-color {
+    color: white;
+}
+.display-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.justify-evenly {
+    justify-content: space-evenly;
+}
+.nav-items {
+    min-width: 325px;
+}
+a:link {
+    color: $grey;
+    text-decoration: none;
+}
+.padding-class {
+    padding: 35px;
+}
+.text-center {
+    text-align: center;
+}
+.paragraph {
+    font-size: 1.5em !important;
+    font-weight: 300;
+    line-height: 1.33 !important;
+    letter-spacing: 0.1px;
+}
+@media only screen and (max-width: 991px) {
+    .section {
+        padding: 60px 0;
+    }
+    .hero-section {
+        padding: 160px 0 80px;
+    }
+    #partners, #program, #compliance {
+        padding-bottom: 100px !important;
+    }
+    .footer-border {
+        margin-top: 60px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .display-flex {
+        justify-content: space-around;
+        .nav-items {
+            width: 100%;
+        }
+    }
+    #program .display-flex, #poweredbymystake .display-flex {
+        margin-top: -20px;
+    }
+    #partners .display-flex div {
+        flex: 50%;
+        max-width: 50%;
+    }
+    #team .display-flex div, #signup .display-flex div {
+        flex: 100%;
+        max-width: 100%;
+    }
+    #signup .small-button {
+        width: 60% !important;
+    }
+}

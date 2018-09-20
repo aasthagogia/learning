@@ -1,0 +1,8 @@
+#partners {
+    background-color: white !important;
+    padding-bottom: 200px !important;
+    h2 {
+        @extend .color-class;
+        font-family: $Secondary-font !important;
+    } 
+}

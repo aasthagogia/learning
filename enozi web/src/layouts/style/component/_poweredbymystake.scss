@@ -1,0 +1,25 @@
+.my-stake-span {
+    font-family: $Tertiary-font;
+    font-weight: 700;
+    color: $md-secondary-color;
+    position: relative;
+}
+#poweredbymystake {
+    background-color: $md-tertiary-color;
+    h2 {
+        color: $dark-blue !important;
+    }
+}
+.mystake-logo {
+    text-align: center;
+    margin-bottom: 4px;
+}
+.my-stake-span::after {
+    position: absolute;
+    content: '';
+    border-bottom: 1px solid $green;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

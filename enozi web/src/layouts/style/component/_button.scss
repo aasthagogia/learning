@@ -1,0 +1,89 @@
+// .md-btn {
+//     height: 56px !important;
+//     line-height: 56px;
+//     border-radius: 38px !important;
+//     @include box-shadow(0px 15px 24px rgba(23, 3, 79, 0.10) !important);
+//     font-size: $font-xs !important;
+//     font-weight: 600 !important;
+//     letter-spacing: 2px;
+//     padding: 0 35px !important;
+// 		span {
+// 		    font-weight:  inherit !important;
+// 		}
+// 		svg {
+// 			 display:  inline-block;
+// 			 width: 30px;
+// 			 vertical-align: middle;
+// 			 margin-right: 17px;
+// 			 margin-top: -3px;
+// 			 height: 27px;
+// 			 fill: currentColor;
+//        @include devicepoint('480px'){
+//           width: 20px;
+//           margin-right: 2px;
+//        }
+// 		}
+//     .fab{
+//       display:  inline-block;
+//       width: 30px;
+//       vertical-align: middle;
+//       margin-right: 17px;
+//       height: 27px;
+//       font-size: 30px;
+//       line-height: 27px;
+//     }
+// 		&.btn-default {
+// 		    background:  #fff;
+// 		    color:  $blue;
+// 				&:hover{
+// 					background: $blue;
+// 					color: #fff;
+// 				}
+// 		}
+//     &.md-background--primary:not(.btn-default){
+//       color: #fff !important;
+//     }
+// }
+
+.md-btn {
+  border: 1px solid !important;
+  // border-color: $grey !important;
+  padding: 8px;
+  border-radius: 24px;
+}
+.md-btn--text{
+  text-transform: none !important;
+  color: $grey;
+  font-size: $font-md !important;
+}
+.button {
+  border: 1px solid !important;
+  border-color: $md-secondary-color !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.13);
+  border-radius: 4px !important;
+  background-image: linear-gradient(135deg, #00ce63 0%, #109450 100%) !important;
+  height: 62px !important;
+}
+.button-text {
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  padding: 8px 40px !important;
+}
+
+.view-button {
+  @extend .small-button-measure;
+  border-radius: 4px !important;
+  border: 1px solid #e0dfec !important;
+  margin-top: 57px !important;
+}
+.small-button-measure {
+  width: 170px !important;
+  height: 53px !important;
+}
+.small-button {
+  @extend .small-button-measure;
+  border: 1px solid rgba(255, 255, 255, 0.28) !important;
+  font-size: $font-md !important;
+  color: white !important;
+  text-transform: uppercase !important;
+}

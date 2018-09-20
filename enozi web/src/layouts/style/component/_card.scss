@@ -1,0 +1,20 @@
+#program {
+    .md-background--card {
+        background-color: #2b2a3b !important;
+    }
+}
+#poweredbymystake {
+    .md-background--card {
+        background-color: $green;
+    }
+    .md-card-text p:last-child {
+        background-color: #ffffff;
+        margin: 0 -16px;
+    }
+    h4 {
+        color: $dark-blue !important;
+    }
+    h5 {
+        color: $green !important;
+    }
+}

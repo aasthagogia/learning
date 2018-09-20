@@ -1,0 +1,28 @@
+#team {
+    margin-bottom: -100px;
+    background-color: white;
+    h2 {
+        @extend .color-class;
+        font-family: $Secondary-font !important;
+    } 
+    .role {
+        font-size: $font-xs;
+        color: $green;
+        text-transform: uppercase;
+        letter-spacing: 0.88px;
+        margin-bottom: 10px;
+    }
+    h4 {
+        @extend .color-class;
+        margin: 3rem auto 0px;
+    }
+    button {
+        @extend .color-class;
+        font-family: $Primary-font !important;
+        line-height: 2;
+    }
+}
+.color-class {
+    color: $dark-blue !important;
+    text-align: center;
+}

@@ -1,0 +1,31 @@
+.pageheader {
+    min-height: 300px;
+    text-align:  center;
+		background: $green;
+		background-image: url('/images/hero-bg-min.jpg');
+		background-position: top center;
+		background-size: cover;
+		position: relative;
+		overflow: hidden;
+    color:  #fff;
+    padding-top: 170px;
+    @include devicepoint('991px'){
+      padding-top: 130px;
+    }
+		&:after {
+			content: "";
+			position: relative;
+			height: 110px;
+			background: #fff;
+			@include transform(rotate(3deg));
+			bottom: 0px;
+			display: block;
+			margin: 50px -60px -40px;
+		}
+		h1 {
+		    font-size:  53px;
+        @include devicepoint('767px'){
+          font-size: $h2 - 6px;
+        }
+		}
+}

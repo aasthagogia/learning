@@ -9,11 +9,22 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        var win = window,
+    docEl = document.documentElement,
+    logo = document.getElementById('header');
+
+win.onscroll = function(){
+   var sTop =logo.scrollHeight;
+   document.body.scrollHeight-sTop
+   logo.style.display =  sTop > 100 ? "box-shadow":"-21.213px 21.213px 30px 0px rgba(158, 158, 158, 0.3)" ;
+};
+    </script>
 </head>
 
 <body>
     <div>
-        <header>
+        <header id="header">
             <div class="fullwidth container">
                 <div class="one-third-col text-center">
                     <span class="half-col">
@@ -113,12 +124,26 @@
                         Who are in ectremely love with eco friendly system.
                     </p>
                     <form action="" class="display-flex justify-evenly">
-                        <input type="text" placeholder="Your Height(Inches)" class="one-third-col">
-                        <input type="text" placeholder="Your Weight(Ibs)" class="one-third-col">
-                        <a href="#home" class="text-transform" class="one-third-col">Calculate your bmi</a>
+                        <input type="text" placeholder="Your Height(Inches)" class="twenty-width">
+                        <input type="text" placeholder="Your Weight(Ibs)" class="twenty-width">
+                        <a href="#home" class="text-transform twenty-width calculate-bmi">
+                            Calculate your bmi
+                        </a>
                     </form>
                 </div>
             </div>
+        </section>
+
+        <section id="topcourse">
+            <div class="container">
+                <h1>
+                    Top courses that are open for students
+                </h1>
+                <p>
+                    Who are in ectremely love with eco friendly system.
+                </p>
+            </div>
+
         </section>
     </div>
 </body>

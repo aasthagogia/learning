@@ -1,0 +1,513 @@
+// .hero-section.section{
+// 	min-height: 100vh;
+// 	background: $green;
+// 	background-image: url('/images/hero-bg-min.jpg');
+// 	background-position: top center;
+// 	background-size: cover;
+// 	padding: 200px 0 0;
+// 	position: relative;
+// 	overflow: hidden;
+// 	&:after {
+// 		content: "";
+// 		position: relative;
+// 		height: 200px;
+// 		background: #fff;
+// 		@include transform(rotate(3deg));
+// 		bottom: -60px;
+// 		display: block;
+// 		margin: 30px -60px 0px;
+// 	}
+// 	@include devicepoint('991px'){
+// 		background: #fff;;
+// 		padding: 0;
+// 		&:after{
+// 			display: none;
+// 		}
+// 		.heroContent1{
+// 			background: $green;
+// 			background-image: url('/images/hero-bg-min.jpg');
+// 			padding: 150px 0 0;
+// 			text-align: center;
+// 			&:after {
+// 				content: "";
+// 				position: relative;
+// 				height: 110px;
+// 				background: #fff;
+// 				@include transform(rotate(3deg));
+// 				bottom: -50px;
+// 				display: block;
+// 				margin: 0 -60px 0px;
+// 			}
+
+// 			@include devicepoint('767px'){
+// 				.md-btn.btn-default {
+// 				    height: 40px !important;
+// 				    line-height: 40px;
+// 				    font-size: 11px !important;
+// 				    padding: 0 14px !important;
+// 				    letter-spacing:  1.2px;
+// 						min-width: 230px;
+// 						svg {
+// 						    width:  20px;
+// 						    margin-right: 3px;
+// 						}
+// 				}
+// 			}
+// 		}
+// 	}
+// 	.heroMainSection {
+//     display:  flex;
+//     align-items: flex-end;
+// 		justify-content: space-between;
+// 		@include devicepoint('991px'){
+// 			display: block;
+// 		}
+// 		.heroMVP-section {
+// 		    width: 40%;
+// 		    text-align: center;
+// 				@include devicepoint('991px'){
+// 					width: 100%;
+// 				}
+// 				img{
+// 					margin-bottom: 50px;
+// 					@include devicepoint('1199px'){
+// 						margin-bottom: 0;
+// 					}
+// 				}
+// 				.md-btn{
+// 					min-width: 280px;
+// 					@include devicepoint('767px'){
+// 						min-width: 230px;
+// 					}
+// 				}
+// 		}
+// 	}
+// }
+// .heroCarousel{
+// 	color: #fff;
+// 	padding-bottom: 0px;
+// 	.md-btn + .md-btn{
+// 		margin-left: 40px;
+// 		@include devicepoint('1199px'){
+// 			margin-top: 20px;
+//      clear: both;
+// 	    margin-left: auto;
+// 	    margin-right: auto;
+// 			display: table;
+// 		}
+// 		@include devicepoint('767px'){
+// 			margin-top: 10px;
+// 			.fab{
+// 				width: 20px;
+// 				margin-right: 5px;
+// 				height: 27px;
+// 				font-size: 22px;
+// 			}
+// 		}
+// 	}
+// 	.item{
+// 		outline: 0;
+// 		white-space: pre-line;
+// 		@include devicepoint('480px'){
+// 			white-space: normal;
+// 		}
+// 		h1{
+// 			margin-bottom: 5rem;
+// 			@include devicepoint('767px'){
+// 				margin-bottom: 2rem;
+// 			}
+// 		}
+// 		h5{
+// 			margin-bottom: 0;
+// 			letter-spacing: 1px;
+// 			font-weight: 400;
+// 		}
+// 		@include devicepoint('767px'){
+// 			p{
+// 				margin-bottom: 10px !important;
+// 			}
+// 		}
+// 	}
+// 	ul.slick-dots {
+// 	    text-align:  left;
+// 	    margin-left:  -5px;
+// 	}
+// }
+// .slick-arrow {
+//     display: none !important;
+// }
+
+// ul.slick-dots {
+// 	li {
+// 			width:  auto;
+// 			height: auto !important;
+// 			button {
+// 			    width: 35px !important;
+// 			    background:  $blue;
+// 			    height:  6px;
+// 			    border-radius: 3px;
+// 			    padding:  0;
+// 					@include devicepoint('384px'){
+// 						width: 25px !important;
+// 						height:  4px;
+// 					}
+// 					&:before {
+// 					    display:  none;
+// 					}
+// 			}
+// 			&.slick-active button {
+// 			    background:  #fff;
+// 			}
+// 	}
+// }
+
+
+// .services {
+//     display: grid;
+//     margin: 60px 0px 30px;
+// 		@include grid(1fr 1fr 1fr)
+//     @include grid-gap(20px);
+//     font-size: $font-md;
+// 		position: relative;
+// 		z-index: 1;
+// 		margin-bottom: -180px;
+//     border-top: 1px solid #ffffff;
+
+// 		@include devicepoint('991px'){
+// 			color: $black-800 !important;
+// 			display: block !important;
+// 			margin-bottom: 80px;
+// 		}
+// 		.serviceItem {
+// 		    padding: 70px 40px 40px;
+// 		    min-height: 520px;
+// 		    position:  relative;
+// 				color: #fff;
+// 				@include transition(background 0.15s, box-shadow 0.3s, color 0.15s);
+// 				@include target-IE{
+// 					&:nth-child(1){
+// 						-ms-grid-column: 1;
+// 					}
+// 					&:nth-child(2){
+// 						-ms-grid-column: 2;
+// 					}
+// 					&:nth-child(3){
+// 						-ms-grid-column: 3;
+// 					}
+// 				}
+// 				@include devicepoint('991px'){
+// 					color: $black-800 !important;
+// 					min-height: 100px;
+// 					@include border-radius(3px);
+// 					max-width: 370px;
+// 					margin: auto;
+// 				}
+// 				&:hover{
+// 					color: $black-800;
+// 					background: #fff;
+// 					@include box-shadow(0px 15px 24px rgba(23, 3, 79, 0.10) !important);
+// 					.serviceHover{
+// 						opacity: 1;
+// 					}
+// 					svg{
+// 						fill: $green;
+// 					}
+// 					.platformIcon{
+// 						.cls-1 {
+// 					    stroke: $green;
+// 					  }
+
+// 					  .cls-2 {
+// 					    fill: $green;
+// 					  }
+// 					}
+// 				}
+// 				h4{
+// 					margin-bottom: 10px;
+// 				}
+// 				svg {
+// 				    width: 90px;
+// 				    height:  90px;
+// 				    margin-bottom: 10px;
+// 						fill: currentColor;
+// 						@include transition(fill 0.15s);
+// 						@include devicepoint('991px'){
+// 							fill: $green;
+// 						}
+// 				}
+// 				a{
+// 					.fas{
+// 						margin-right: 15px;
+// 					}
+// 				}
+// 				.learnmore {
+// 				    position:  absolute;
+// 				    left: 40px;
+// 				    bottom: 40px;
+// 				}
+// 				.serviceHover {
+// 				    padding: 30px 0;
+// 						opacity: 0;
+// 				}
+// 				@include devicepoint('991px'){
+// 					&:hover{
+// 						@include box-shadow(0px 5px 24px rgba(23, 3, 79, 0.10) !important);
+// 					}
+// 					.learnmore {
+// 						position: static;
+// 					}
+// 					.serviceHover{
+// 						opacity: 1;
+// 						padding: 20px 0 0;
+// 						p{
+// 							min-height: 50px;
+// 						}
+// 					}
+// 				}
+// 		}
+// }
+
+
+// // ico box
+// .iconSection {
+//     text-align:  center;
+//     padding: 50px 0;
+// 		@include devicepoint('991px'){
+// 			padding: 50px 0 0;
+// 			margin-bottom: 0px;
+// 			position: relative;
+// 			z-index: 1;
+// 		}
+// 		> h2 {
+// 		    color:  #fff !important;
+// 				@include devicepoint('desktop'){
+// 					font-size: $h2 - 9px;
+// 				}
+// 				@include devicepoint('767px'){
+// 					font-size: $base-font-size;
+// 					margin-bottom: 20px;
+// 				}
+// 				&:before {
+// 				    display:  none;
+// 				}
+// 		}
+
+// }
+// .icobox {
+//     background:  #fff;
+//     box-shadow: 0px 15px 24px rgba(23, 3, 79, 0.1);
+//     border-radius: 10px;
+//     padding: 40px 60px;
+//     color:  $gray-blue;
+// 		h6 {
+// 			font-weight:  400;
+// 			letter-spacing: 0.2px;
+// 		}
+// 		@include devicepoint('767px'){
+// 			h6{
+// 				font-size: 11px !important;
+// 			}
+// 		}
+// 		@include devicepoint('480px'){
+// 			padding: 30px;
+// 		}
+// }
+
+// .progressWrap {
+//     font-size:  12px;
+// 		margin-bottom: 50px;
+// 		    opacity: 0.6;
+// 		.progressBar {
+// 		    height:  100%;
+// 		    font-size:  13px;
+// 		    // background:  $blue;
+// 				background:  lighten($gray, 0%);
+// 		    border-radius: 18px;
+// 		    line-height:  36px;
+// 		    color:  #fff;
+// 		    white-space:  nowrap;
+// 		    position:  relative;
+// 		    z-index:  1;
+// 		    width: 0px;
+// 				@include transition(all 1s ease-in-out);
+// 				@include devicepoint('991px'){
+// 					width: 45% !important;
+// 				}
+// 				@include devicepoint('767px'){
+// 					line-height: 20px;
+// 					font-size: 8px;
+// 				}
+// 		}
+// 		@include devicepoint('767px'){
+// 			font-size: 9px;
+// 		}
+// 		.labelWrap {
+// 		    color:  $gray-blue-dark;
+// 		    display:  flex;
+// 		    justify-content:  space-between;
+// 				padding: 0 30px;
+// 				margin-bottom: 10px;
+// 		}
+// 		.barwrap {
+// 		    height:  36px;
+// 		    border-radius: 18px;
+// 				background:  lighten($gray, 40%);
+// 		    // background: rgba(60, 176, 252, 0.1);
+// 		    position:  relative;
+// 				> span {
+// 				    position:  absolute;
+// 				    bottom:  -30px;
+// 						&.leftTitle {
+// 						    left: 10%;
+// 						}
+// 						&.rightTitle {
+// 						    right:  10%;
+// 						}
+// 						&:before {
+// 						    content:  "";
+// 						    display: block;
+// 						    width: 2px;
+// 						    height: 49px;
+// 						    background: #311F9B;
+// 						    opacity: 0.4;
+// 						    margin:  auto;
+// 						}
+// 				}
+// 				@include devicepoint('767px'){
+// 					height: 20px;
+// 					>span{
+// 						&.leftTitle {
+// 						    left: 20%;
+// 						}
+// 						&.rightTitle {
+// 						    right:  20%;
+// 						}
+// 						&:before {
+// 							height: 30px;
+// 						}
+// 					}
+// 				}
+// 		}
+// }
+
+// .clockWrap {
+//     display:  flex;
+//     justify-content:  center;
+//     font-size:  12px;
+//     text-transform: uppercase;
+//     margin-bottom: 60px;
+// 		opacity: 0.4; /* remove this comment when active the timer  */
+// 		span {
+// 		    font-size:  60px;
+// 		    display:  block;
+// 		    line-height:  1;
+// 		    // color:  $blue;
+// 		}
+// 		@include devicepoint('767px'){
+// 			font-size: 7px;
+// 			margin-bottom: 30px;
+// 			span{
+// 				font-size: 32px;
+// 			}
+// 			> div:after{
+// 				font-size: 22px !important;
+// 				top: 0 !important;
+// 			}
+// 		}
+// 		> div {
+// 		    padding: 0 25px;
+// 		    position:  relative;
+// 				&:last-child{
+// 					padding-right: 0;
+// 					&:after {
+// 					    display:  none;
+// 					}
+// 				}
+// 				&:after {
+// 				    content:  ":";
+// 				    position:  absolute;
+// 				    right:  0;
+// 				    top: 6px;
+// 				    font-size: 40px;
+// 				    // color:  $blue;
+// 				}
+// 				@include devicepoint('480px'){
+// 			    padding: 0 14px;
+// 					&:first-of-type{
+// 						padding-left: 0;
+// 					}
+// 					&:last-of-type{
+// 						padding-last: 0;
+// 					}
+// 				}
+// 		}
+// }
+
+
+// .ico-footer {
+// 	font-size:  $font-xs;
+// 	@include devicepoint('991px'){
+// 		display:  flex;
+// 		justify-content:  center;
+// 		flex-wrap:  wrap;
+// 		align-items:  center;
+// 		.currency {
+// 		    width:  100%;
+// 		}
+// 	}
+// 	.md-btn {
+// 	    vertical-align:  middle;
+// 	    margin: 0 55px;
+// 	    height:  52px !important;
+// 	}
+// 	@include devicepoint('767px'){
+// 		font-size: 9px;
+// 		.md-btn{
+// 			margin: 0px;
+// 	    height:  30px !important;
+// 			font-size: 10px !important;
+// 			line-height: 30px !important;
+// 			padding: 0px 20px !important;
+// 		}
+// 	}
+// 	> a {
+// 		 color:  inherit;
+// 		 .fas {
+// 		     margin-right: 5px;
+// 		     color:  #5D46E8;
+// 		 }
+//  }
+//  .currency {
+//      display:  block;
+//      margin-top: 20px;
+//      font-size: 12px;
+
+// 		 span {
+// 		     margin: 0 5px;
+// 		     font-size:  $base-font-size;
+// 		     color:  $blue;
+// 		 }
+// 		 @include devicepoint('767px'){
+// 			 font-size: 9px;
+// 			 span{
+// 				 font-size: 11px;
+// 			 }
+// 		 }
+
+//  }
+// }
+#hero-repeat-span {
+    color: $green;
+    text-decoration: underline;
+}
+.hero-section {
+    position: relative;
+    min-height: 100vh;
+    padding: 200px 0 160px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    .container{
+        max-width: 1000px;
+    }
+}

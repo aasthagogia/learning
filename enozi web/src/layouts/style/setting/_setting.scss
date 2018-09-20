@@ -1,0 +1,40 @@
+$Primary-font: "Px Grotesk Regular" !default;
+$Secondary-font: 'Px Grotesk -Light';
+$Tertiary-font: 'Px Grotesk -Bold';
+$md-font-family: '#{$Primary-font}', sans-serif !default;
+$extend-html-tags: false !default;
+$md-typography-include-text-container: false !default;
+$md-typography-include-utilities: false !default;
+
+// Theme color
+$navy-blue: #0d0b29;
+$dark-blue: #2e3252;
+$green: #00ce63;
+$grey: #696d8a;
+$footer-color: #090625;
+
+$md-typography-extended: true !default;
+
+$md-primary-color: $navy-blue;
+$md-secondary-color: $green;
+$md-tertiary-color: #fff;
+$primary-color: $md-primary-color;
+
+// $border-color: $gray-bg;
+
+$base-font-size: 16px;
+$font-md: 16px;
+$font-sm: 15px;
+$font-xs: 14px;
+$md-display-1-font-size: 34px !default;
+$md-display-2-font-size: 45px !default;
+$md-display-3-font-size: 63px !default;
+$md-display-4-font-size: 112px !default;
+$h1: 76px !default;
+$h2: 46px !default;
+$h3: 36px !default;
+$h4: 24px !default;
+$h5: $font-md !default;
+$h6: $font-sm !default;
+
+@include react-md-typography;
