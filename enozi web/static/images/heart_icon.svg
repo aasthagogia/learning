@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-7922 3902 78.125 68.75">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-2);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.27" y1="-0.101" x2="0.27" y2="0.577" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#1892d2"/>
+      <stop offset="1" stop-color="#31a84d"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="-1.66" y1="-0.67" x2="-1.66" y2="0.016" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="icons8_Heart" transform="translate(-7932.938 3886.375)">
+    <path id="Path_24" data-name="Path 24" class="cls-1" d="M50,84.375c-9.441,0-39.062-20.1-39.062-48.437A20.313,20.313,0,0,1,50,28.125a20.313,20.313,0,0,1,39.063,7.813C89.063,64.277,59.441,84.375,50,84.375ZM31.25,18.75A17.208,17.208,0,0,0,14.063,35.938C14.063,63.164,43.047,81.25,50,81.25S85.938,63.164,85.938,35.938a17.188,17.188,0,0,0-34.375,0H48.438A17.208,17.208,0,0,0,31.25,18.75Z"/>
+    <path id="Path_25" data-name="Path 25" class="cls-2" d="M81.25,34.375H78.125A9.382,9.382,0,0,0,68.75,25V21.875A12.517,12.517,0,0,1,81.25,34.375Z"/>
+  </g>
+</svg>
